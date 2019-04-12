@@ -1,0 +1,13 @@
+---
+galaxy_info:
+  description: Formats and mounts given device
+  company: Traveloka
+  min_ansible_version: 2.0
+  platforms:
+  - name: Ubuntu
+    versions:
+    - trusty
+  categories:
+  - system
+dependencies:
+   { role: 'git+https://github.com/traveloka/ansible-xfsprogs'}
