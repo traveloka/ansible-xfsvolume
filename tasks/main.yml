@@ -1,0 +1,21 @@
+---
+
+- block:
+    - name: xfs format volume
+      filesystem:
+        fstype: "{{ xfs_volume_fstype }}"
+        dev: "{{ xfs_volume_device }}"
+        force: "{{ xfs_volume_force_format }}"
+
+    - name: mount xfs volume
+      mount:
+        name: "{{ xfs_volume_mount }}"
+        src: "{{ xfs_volume_device }}"
+        fstype: "{{ xfs_volume_fstype }}"
+        opts: "{{ xfs_volume_opts }}"
+        state: "{{ xfs_volume_state }}"
+
+  become: true
+  become_method: sudo
+  tags:
+    - xfs_volume

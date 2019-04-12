@@ -1,0 +1,7 @@
+---
+
+xfs_volume_device: /dev/xvdf
+xfs_volume_mount: /data
+xfs_volume_opts: noatime,noexec,nodiratime
+xfs_volume_state: mounted
+xfs_volume_force_format: no

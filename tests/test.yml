@@ -1,0 +1,8 @@
+---
+- hosts: all
+  vars:
+    apt_cache_valid_time: 3600
+    xfs_volume_device: /dev/sdb
+  roles:
+    - role: shared/apt_sources_list
+    - role: ../../xfs_volume
