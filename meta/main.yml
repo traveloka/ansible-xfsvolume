@@ -10,4 +10,4 @@ galaxy_info:
   categories:
   - system
 dependencies:
-   { role: 'git+https://github.com/traveloka/ansible-xfsprogs'}
+  - { role: 'git+https://github.com/traveloka/ansible-xfsprogs'}
